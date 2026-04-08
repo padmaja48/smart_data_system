@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartData - Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- simple nav -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">SmartData</h1>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link active">Registration</a></li>
+                <li><a href="/dashboard" class="nav-link">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="page-header">
+            <h2>User Registration</h2>
+            <p>Fill in your details below</p>
+        </div>
+
+        <!-- registration form -->
+        <div class="section">
+            <form id="registrationForm" class="form-box">
+                <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  required>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-msg" id="phone-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <span class="error-msg" id="password-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="datasetFile">Upload Dataset (Optional)</label>
+                <input type="file" id="datasetFile" name="datasetFile" accept=".csv,.json">
+                <p class="file-hint">CSV or JSON file to generate statistics and charts</p>
+                <div id="fileStatus" class="file-hint hidden">Selected: <strong id="selectedFileName"></strong></div>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn btn-primary">Register & Process</button>
+                <button type="reset" class="btn btn-secondary">Clear</button>
+            </div>
+            </form>
+
+            <!-- validation results -->
+            <div id="resultBox" class="result-box hidden">
+                <h3>Validation Results</h3>
+                <div id="resultContent"></div>
+            </div>
+
+            <!-- processing results -->
+            <div id="processResult" class="process-result hidden"></div>
+
+            <!-- loading spinner -->
+            <div id="loadingSpinner" class="loading hidden">Processing...</div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartData - Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- simple nav -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">SmartData</h1>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Registration</a></li>
+                <li><a href="/dashboard" class="nav-link active">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="page-header">
+            <h2>Dashboard</h2>
+            <p>View submitted data and results</p>
+        </div>
+
+        <!-- stats section -->
+        <div class="stats-container">
+            <div class="stat-card">
+                <h4>Total Submissions</h4>
+                <p class="stat-number" id="totalSubmissions">0</p>
+            </div>
+            <div class="stat-card">
+                <h4>Valid Users</h4>
+                <p class="stat-number" id="validUsers">0</p>
+            </div>
+            <div class="stat-card">
+                <h4>Datasets</h4>
+                <p class="stat-number" id="totalDatasets">0</p>
+            </div>
+        </div>
+
+        <!-- submissions table -->
+        <div class="section">
+            <h3>Recent Submissions</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="submissionsTable">
+                    <tr>
+                        <td colspan="5" class="empty-state">No submissions yet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- datasets section -->
+        <div class="section">
+            <h3>Processed Datasets</h3>
+            <div class="cards-container" id="datasetsContainer">
+                <p class="empty-state">No datasets uploaded yet</p>
+            </div>
+        </div>
+
+        <!-- loading spinner -->
+        <div id="loadingSpinner" class="loading hidden">Loading...</div>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script>
+        // load dashboard data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDashboardData();
+        });
+    </script>
+</body>
+</html>
