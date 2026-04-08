@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Vishnu",
+    "email": "vishnuteja2913@gmail.com",
+    "phone": "90320187725",
+    "status": "valid",
+    "submitted_at": "2026-04-07T12:43:14.365386"
+  },
+  {
+    "id": 2,
+    "name": "sai padmaja kuncham",
+    "email": "padmajakuncham48@gmail.com",
+    "phone": "9441826715",
+    "status": "valid",
+    "submitted_at": "2026-04-08T19:02:23.030527"
+  },
+  {
+    "id": 3,
+    "name": "sai",
+    "email": "padmajakuncham38@gmail.com",
+    "phone": "9390187725",
+    "status": "valid",
+    "submitted_at": "2026-04-08T20:04:55.675052"
+  },
+  {
+    "id": 4,
+    "name": "saranya",
+    "email": "saruu@gmail.com",
+    "phone": "949678576",
+    "status": "valid",
+    "submitted_at": "2026-04-08T20:10:33.579635"
+  }
+]

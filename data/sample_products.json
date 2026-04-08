@@ -1,0 +1,12 @@
+[
+  {"product": "Laptop", "price": 55000, "units_sold": 120, "rating": 4.5, "return_rate": 2.1},
+  {"product": "Phone", "price": 18000, "units_sold": 430, "rating": 4.2, "return_rate": 3.5},
+  {"product": "Tablet", "price": 25000, "units_sold": 95, "rating": 4.0, "return_rate": 1.8},
+  {"product": "Headphones", "price": 3500, "units_sold": 310, "rating": 4.7, "return_rate": 0.9},
+  {"product": "Smartwatch", "price": 12000, "units_sold": 175, "rating": 3.9, "return_rate": 4.2},
+  {"product": "Monitor", "price": 22000, "units_sold": 60, "rating": 4.3, "return_rate": 1.2},
+  {"product": "Keyboard", "price": 2200, "units_sold": 520, "rating": 4.6, "return_rate": 0.5},
+  {"product": "Mouse", "price": 1500, "units_sold": 490, "rating": 4.4, "return_rate": 0.7},
+  {"product": "Webcam", "price": 4500, "units_sold": 140, "rating": 3.8, "return_rate": 3.0},
+  {"product": "Speaker", "price": 7000, "units_sold": 200, "rating": 4.1, "return_rate": 2.2}
+]

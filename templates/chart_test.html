@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chart Display Diagnostics</title>
+    <style>
+        body { 
+            font-family: 'Courier New', monospace; 
+            margin: 20px; 
+            background: #f9f9f9;
+        }
+        h1 { color: #333; }
+        .section { 
+            background: white; 
+            border: 1px solid #ddd; 
+            margin: 20px 0; 
+            padding: 15px; 
+            border-radius: 4px;
+        }
+        .success { background: #e6ffe6; border-left: 4px solid #00cc00; color: #009900; }
+        .error { background: #ffe6e6; border-left: 4px solid #cc0000; color: #990000; }
+        .warning { background: #ffffcc; border-left: 4px solid #ffcc00; color: #999900; }
+        .info { background: #e6f2ff; border-left: 4px solid #0066ff; color: #0033cc; }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .chart-item {
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            background: white;
+        }
+        .chart-item img {
+            width: 100%;
+            height: auto;
+            background: #f0f0f0;
+            margin-top: 10px;
+        }
+        .chart-filename {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .log {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+        .log-line { display: block; margin: 2px 0; }
+    </style>
+</head>
+<body>
+    <h1>Chart Display Diagnostics</h1>
+    
+    <div class="section">
+        <h2>1. Backend Connection Test</h2>
+        <div id="backend-test"></div>
+    </div>
+    
+    <div class="section">
+        <h2>2. Available Charts on Server</h2>
+        <div id="charts-info"></div>
+    </div>
+    
+    <div class="section">
+        <h2>3. Chart Loading Test (First 3 Charts)</h2>
+        <div class="chart-grid" id="charts-container"></div>
+    </div>
+    
+    <div class="section">
+        <h2>4. Browser Console Logs</h2>
+        <div class="log" id="console-log"></div>
+    </div>
+
+    <script>
+        // Capture console logs
+        const consoleLogs = [];
+        const originalLog = console.log;
+        const originalError = console.error;
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            const msg = args.map(a => String(a)).join(' ');
+            addLog('[LOG] ' + msg);
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            const msg = args.map(a => String(a)).join(' ');
+            addLog('[ERROR] ' + msg);
+        };
+        
+        function addLog(msg) {
+            consoleLogs.push(msg);
+            const logDiv = document.getElementById('console-log');
+            const line = document.createElement('span');
+            line.className = 'log-line';
+            line.textContent = msg;
+            logDiv.appendChild(line);
+            logDiv.scrollTop = logDiv.scrollHeight;
+        }
+        
+        // Test 1: Backend connection
+        console.log('Starting diagnostics...');
+        fetch('/api/debug/charts')
+            .then(r => {
+                console.log('Backend response status:', r.status);
+                return r.json();
+            })
+            .then(data => {
+                console.log('Backend data received:', data.total_charts, 'charts');
+                
+                const backendDiv = document.getElementById('backend-test');
+                backendDiv.className = 'info success';
+                backendDiv.innerHTML = `
+                    <strong>Connection: SUCCESS</strong><br>
+                    Status: 200 OK<br>
+                    Charts directory: ${data.charts_dir}<br>
+                    Charts found: ${data.total_charts}
+                `;
+                
+                // Display charts info
+                const chartsInfoDiv = document.getElementById('charts-info');
+                chartsInfoDiv.innerHTML = `<p>Total charts on server: ${data.total_charts}</p>`;
+                const ul = document.createElement('ul');
+                data.charts.forEach(chart => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<code>${chart.filename}</code> (${chart.size_bytes} bytes)`;
+                    ul.appendChild(li);
+                });
+                chartsInfoDiv.appendChild(ul);
+                
+                // Load first 3 charts
+                const container = document.getElementById('charts-container');
+                data.charts.slice(0, 3).forEach((chart, idx) => {
+                    console.log(`Creating img element for chart ${idx}: ${chart.url}`);
+                    
+                    const div = document.createElement('div');
+                    div.className = 'chart-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = chart.url;
+                    img.alt = chart.filename;
+                    
+                    img.onload = function() {
+                        console.log('Image loaded successfully: ' + chart.url);
+                        div.style.borderColor = '#00cc00';
+                        const status = document.createElement('div');
+                        status.className = 'success';
+                        status.textContent = 'Loaded';
+                        div.appendChild(status);
+                    };
+                    
+                    img.onerror = function() {
+                        console.error('Image failed to load: ' + chart.url);
+                        div.style.borderColor = '#cc0000';
+                        const status = document.createElement('div');
+                        status.className = 'error';
+                        status.textContent = 'Failed to load';
+                        div.appendChild(status);
+                    };
+                    
+                    const filename = document.createElement('div');
+                    filename.className = 'chart-filename';
+                    filename.textContent = chart.filename;
+                    
+                    div.appendChild(img);
+                    div.appendChild(filename);
+                    container.appendChild(div);
+                });
+            })
+            .catch(error => {
+                console.error('Backend connection error:', error);
+                const backendDiv = document.getElementById('backend-test');
+                backendDiv.className = 'error';
+                backendDiv.innerHTML = `<strong>Connection FAILED</strong><br>${error}`;
+            });
+    </script>
+</body>
+</html>

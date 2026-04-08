@@ -1,0 +1,3756 @@
+[
+  {
+    "id": 1,
+    "name": "test_dataset",
+    "stats": {
+      "row_count": 50,
+      "col": "age"
+    },
+    "charts": [
+      "charts/bar_test.png"
+    ],
+    "processed_at": "2026-04-07T04:32:15.676968"
+  },
+  {
+    "id": 2,
+    "name": "sample_data + sample_data_mp",
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 2,
+          "processing_time_seconds": 0.3297,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_043233_850212.png",
+      "charts/line_20260407_043234_012958.png",
+      "charts/dist_20260407_043234_014803.png"
+    ],
+    "processed_at": "2026-04-07T04:32:35.236947"
+  },
+  {
+    "id": 3,
+    "name": "urbanthreads_q4 + urbanthreads_q4_mp",
+    "user_id": 8,
+    "stats": {
+      "row_count": 346,
+      "column_count": 23,
+      "columns": [
+        "Order ID",
+        "Order Date",
+        "Customer ID",
+        "Type",
+        "SKU",
+        "Category",
+        "Product Name",
+        "Unit Price",
+        "Qty",
+        "Total",
+        "Discount Code",
+        "Disc %",
+        "Payment",
+        "Source",
+        "City",
+        "State",
+        "Warehouse",
+        "Del Date",
+        "Status",
+        "Return?",
+        "Reason",
+        "Ret Rec",
+        "Refund"
+      ],
+      "missing_values": 556,
+      "column_stats": {
+        "Unit Price": {
+          "column": "Unit Price",
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1776.9918,
+          "min": 299.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Qty": {
+          "column": "Qty",
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5634,
+          "min": -1.0,
+          "max": 5.0,
+          "count": 346
+        },
+        "Total": {
+          "column": "Total",
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1692.1929,
+          "min": 699.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Disc %": {
+          "column": "Disc %",
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.575,
+          "min": 0.0,
+          "max": 40.0,
+          "count": 346
+        }
+      },
+      "multiprocess_stats": {
+        "Unit Price": {
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1774.4221,
+          "variance": 3148573.7078,
+          "min": 299,
+          "max": 8999,
+          "p25": 1599,
+          "p75": 3799,
+          "count": 346
+        },
+        "Qty": {
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5626,
+          "variance": 0.3166,
+          "min": -1,
+          "max": 5,
+          "p25": 1,
+          "p75": 1,
+          "count": 346
+        },
+        "Total": {
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1689.7458,
+          "variance": 2855240.7954,
+          "min": 699,
+          "max": 8999,
+          "p25": 1799,
+          "p75": 3799,
+          "count": 346
+        },
+        "Disc %": {
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.5553,
+          "variance": 183.7474,
+          "min": 0,
+          "max": 40,
+          "p25": 0,
+          "p75": 20,
+          "count": 346
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.3224,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_125336_732493.png",
+      "charts/line_20260407_125336_692321.png",
+      "charts/dist_20260407_125336_741642.png"
+    ],
+    "processed_at": "2026-04-07T12:53:39.345786"
+  },
+  {
+    "id": 4,
+    "name": "urbanthreads_q4 + urbanthreads_q4_mp",
+    "user_id": 9,
+    "stats": {
+      "row_count": 346,
+      "column_count": 23,
+      "columns": [
+        "Order ID",
+        "Order Date",
+        "Customer ID",
+        "Type",
+        "SKU",
+        "Category",
+        "Product Name",
+        "Unit Price",
+        "Qty",
+        "Total",
+        "Discount Code",
+        "Disc %",
+        "Payment",
+        "Source",
+        "City",
+        "State",
+        "Warehouse",
+        "Del Date",
+        "Status",
+        "Return?",
+        "Reason",
+        "Ret Rec",
+        "Refund"
+      ],
+      "missing_values": 556,
+      "column_stats": {
+        "Unit Price": {
+          "column": "Unit Price",
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1776.9918,
+          "min": 299.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Qty": {
+          "column": "Qty",
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5634,
+          "min": -1.0,
+          "max": 5.0,
+          "count": 346
+        },
+        "Total": {
+          "column": "Total",
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1692.1929,
+          "min": 699.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Disc %": {
+          "column": "Disc %",
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.575,
+          "min": 0.0,
+          "max": 40.0,
+          "count": 346
+        }
+      },
+      "multiprocess_stats": {
+        "Unit Price": {
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1774.4221,
+          "variance": 3148573.7078,
+          "min": 299,
+          "max": 8999,
+          "p25": 1599,
+          "p75": 3799,
+          "count": 346
+        },
+        "Qty": {
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5626,
+          "variance": 0.3166,
+          "min": -1,
+          "max": 5,
+          "p25": 1,
+          "p75": 1,
+          "count": 346
+        },
+        "Total": {
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1689.7458,
+          "variance": 2855240.7954,
+          "min": 699,
+          "max": 8999,
+          "p25": 1799,
+          "p75": 3799,
+          "count": 346
+        },
+        "Disc %": {
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.5553,
+          "variance": 183.7474,
+          "min": 0,
+          "max": 40,
+          "p25": 0,
+          "p75": 20,
+          "count": 346
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.3087,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_125654_594731.png",
+      "charts/line_20260407_125654_680046.png",
+      "charts/dist_20260407_125654_686860.png"
+    ],
+    "processed_at": "2026-04-07T12:56:57.396270"
+  },
+  {
+    "id": 5,
+    "name": "umath-validation-set-sinh + umath-validation-set-sinh_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 1428,
+      "column_count": 4,
+      "columns": [
+        "dtype",
+        "input",
+        "output",
+        "ulperrortol"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "ulperrortol": {
+          "column": "ulperrortol",
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.5002,
+          "min": 1.0,
+          "max": 2.0,
+          "count": 1428
+        }
+      },
+      "multiprocess_stats": {
+        "ulperrortol": {
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.5,
+          "variance": 0.25,
+          "min": 1,
+          "max": 2,
+          "p25": 1,
+          "p75": 2,
+          "count": 1428
+        },
+        "_meta": {
+          "workers_used": 1,
+          "processing_time_seconds": 1.1872,
+          "columns_processed": 1
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_130610_618160.png",
+      "charts/line_20260407_130610_603607.png",
+      "charts/dist_20260407_130610_594912.png"
+    ],
+    "processed_at": "2026-04-07T13:06:11.201364"
+  },
+  {
+    "id": 6,
+    "name": "umath-validation-set-sinh + umath-validation-set-sinh_mp",
+    "user_id": 10,
+    "stats": {
+      "row_count": 1428,
+      "column_count": 4,
+      "columns": [
+        "dtype",
+        "input",
+        "output",
+        "ulperrortol"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "ulperrortol": {
+          "column": "ulperrortol",
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.5002,
+          "min": 1.0,
+          "max": 2.0,
+          "count": 1428
+        }
+      },
+      "multiprocess_stats": {
+        "ulperrortol": {
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.5,
+          "variance": 0.25,
+          "min": 1,
+          "max": 2,
+          "p25": 1,
+          "p75": 2,
+          "count": 1428
+        },
+        "_meta": {
+          "workers_used": 1,
+          "processing_time_seconds": 1.0715,
+          "columns_processed": 1
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_130620_039353.png",
+      "charts/line_20260407_130620_303778.png",
+      "charts/dist_20260407_130620_312735.png"
+    ],
+    "processed_at": "2026-04-07T13:06:21.087703"
+  },
+  {
+    "id": 7,
+    "name": "sample_data + sample_data_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.3509,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_130750_399449.png",
+      "charts/line_20260407_130751_058816.png",
+      "charts/dist_20260407_130751_080264.png"
+    ],
+    "processed_at": "2026-04-07T13:07:52.696068"
+  },
+  {
+    "id": 8,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 12,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.717,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_130810_689799.png",
+      "charts/line_20260407_130810_608976.png",
+      "charts/dist_20260407_130810_786952.png"
+    ],
+    "processed_at": "2026-04-07T13:08:13.689112"
+  },
+  {
+    "id": 9,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 11,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.4134,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_130809_010646.png",
+      "charts/line_20260407_130810_192552.png",
+      "charts/dist_20260407_130810_779958.png"
+    ],
+    "processed_at": "2026-04-07T13:08:14.055389"
+  },
+  {
+    "id": 10,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 14,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.1417,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_131029_731777.png",
+      "charts/line_20260407_131029_773606.png",
+      "charts/dist_20260407_131029_751881.png"
+    ],
+    "processed_at": "2026-04-07T13:10:30.494120"
+  },
+  {
+    "id": 11,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 15,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.2221,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_131211_617871.png",
+      "charts/line_20260407_131211_581632.png",
+      "charts/dist_20260407_131211_621156.png"
+    ],
+    "processed_at": "2026-04-07T13:12:11.862669"
+  },
+  {
+    "id": 12,
+    "name": "sample_data + sample_data_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.2538,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_131413_365780.png",
+      "charts/line_20260407_131413_343883.png",
+      "charts/dist_20260407_131413_542726.png"
+    ],
+    "processed_at": "2026-04-07T13:14:16.086865"
+  },
+  {
+    "id": 13,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 16,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.2274,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_131600_511725.png",
+      "charts/line_20260407_131600_498755.png",
+      "charts/dist_20260407_131600_517836.png"
+    ],
+    "processed_at": "2026-04-07T13:16:01.259733"
+  },
+  {
+    "id": 14,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 17,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.1779,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_131914_400426.png",
+      "charts/line_20260407_131914_398828.png",
+      "charts/dist_20260407_131914_393006.png"
+    ],
+    "processed_at": "2026-04-07T13:19:14.644908"
+  },
+  {
+    "id": 15,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 18,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.2031,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_132336_337858.png",
+      "charts/line_20260407_132336_330685.png",
+      "charts/dist_20260407_132336_340205.png"
+    ],
+    "processed_at": "2026-04-07T13:23:37.136727"
+  },
+  {
+    "id": 16,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 19,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.2472,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_132518_461822.png",
+      "charts/line_20260407_132518_436974.png",
+      "charts/dist_20260407_132518_480523.png"
+    ],
+    "processed_at": "2026-04-07T13:25:19.267473"
+  },
+  {
+    "id": 17,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 20,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5086,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_132823_190070.png",
+      "charts/line_20260407_132823_179050.png",
+      "charts/dist_20260407_132823_212536.png"
+    ],
+    "processed_at": "2026-04-07T13:28:24.206634"
+  },
+  {
+    "id": 18,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 21,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5624,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_132947_097900.png",
+      "charts/line_20260407_132947_058724.png",
+      "charts/dist_20260407_132947_100811.png"
+    ],
+    "processed_at": "2026-04-07T13:29:48.133254"
+  },
+  {
+    "id": 19,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 22,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.8636,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133115_335529.png",
+      "charts/line_20260407_133115_342406.png",
+      "charts/dist_20260407_133115_362391.png"
+    ],
+    "processed_at": "2026-04-07T13:31:16.314906"
+  },
+  {
+    "id": 20,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 23,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5132,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133143_126483.png",
+      "charts/line_20260407_133143_074637.png",
+      "charts/dist_20260407_133143_133230.png"
+    ],
+    "processed_at": "2026-04-07T13:31:44.116126"
+  },
+  {
+    "id": 21,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 24,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5897,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133335_674554.png",
+      "charts/line_20260407_133335_668053.png",
+      "charts/dist_20260407_133335_707060.png"
+    ],
+    "processed_at": "2026-04-07T13:33:36.671069"
+  },
+  {
+    "id": 22,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 25,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.4737,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133510_115275.png",
+      "charts/line_20260407_133510_101198.png",
+      "charts/dist_20260407_133510_130336.png"
+    ],
+    "processed_at": "2026-04-07T13:35:11.147799"
+  },
+  {
+    "id": 23,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 26,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5496,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133635_250658.png",
+      "charts/line_20260407_133635_213026.png",
+      "charts/dist_20260407_133635_247662.png"
+    ],
+    "processed_at": "2026-04-07T13:36:36.223841"
+  },
+  {
+    "id": 24,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 27,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5742,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_133818_029564.png",
+      "charts/line_20260407_133818_017894.png"
+    ],
+    "processed_at": "2026-04-07T13:38:18.701519"
+  },
+  {
+    "id": 25,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 28,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5727,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_134121_937844.png",
+      "charts/line_20260407_134121_897519.png",
+      "charts/dist_20260407_134121_935117.png"
+    ],
+    "processed_at": "2026-04-07T13:41:22.925184"
+  },
+  {
+    "id": 26,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 29,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.4487,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_135358_376920.png",
+      "charts/line_20260407_135358_339902.png",
+      "charts/dist_20260407_135358_366759.png"
+    ],
+    "processed_at": "2026-04-07T13:53:59.332093"
+  },
+  {
+    "id": 27,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 30,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.4165,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_135627_971888.png",
+      "charts/line_20260407_135627_911395.png",
+      "charts/dist_20260407_135627_974648.png"
+    ],
+    "processed_at": "2026-04-07T13:56:28.860025"
+  },
+  {
+    "id": 28,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 31,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.3701,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_141136_220062.png",
+      "charts/line_20260407_141136_229452.png",
+      "charts/dist_20260407_141136_226163.png"
+    ],
+    "processed_at": "2026-04-07T14:11:37.189333"
+  },
+  {
+    "id": 29,
+    "name": "datasets + datasets_mp",
+    "user_id": 33,
+    "stats": {
+      "row_count": 28,
+      "column_count": 6,
+      "columns": [
+        "id",
+        "name",
+        "stats",
+        "charts",
+        "processed_at",
+        "user_id"
+      ],
+      "missing_values": 5,
+      "column_stats": {
+        "id": {
+          "column": "id",
+          "mean": 14.5,
+          "median": 14.5,
+          "std": 8.226,
+          "min": 1.0,
+          "max": 28.0,
+          "count": 28
+        },
+        "user_id": {
+          "column": "user_id",
+          "mean": 19.7826,
+          "median": 20.0,
+          "std": 7.09,
+          "min": 8.0,
+          "max": 31.0,
+          "count": 23
+        }
+      },
+      "multiprocess_stats": {
+        "id": {
+          "mean": 14.5,
+          "median": 14.5,
+          "std": 8.0777,
+          "variance": 65.25,
+          "min": 1,
+          "max": 28,
+          "p25": 7,
+          "p75": 21,
+          "count": 28
+        },
+        "user_id": {
+          "mean": 19.7826,
+          "median": 20.0,
+          "std": 6.9342,
+          "variance": 48.0832,
+          "min": 8.0,
+          "max": 31.0,
+          "p25": 14.0,
+          "p75": 26.0,
+          "count": 23
+        },
+        "_meta": {
+          "workers_used": 2,
+          "processing_time_seconds": 1.2407,
+          "columns_processed": 2
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_142252_941180.png",
+      "charts/line_20260407_142252_327610.png",
+      "charts/dist_20260407_142253_013625.png"
+    ],
+    "processed_at": "2026-04-07T14:22:54.717167"
+  },
+  {
+    "id": 30,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 34,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 0.8809,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260407_144321_295126.png",
+      "charts/dist_20260407_144321_895552.png"
+    ],
+    "processed_at": "2026-04-07T14:43:23.471621"
+  },
+  {
+    "id": 31,
+    "name": "urbanthreads_q4 + urbanthreads_q4_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 346,
+      "column_count": 23,
+      "columns": [
+        "Order ID",
+        "Order Date",
+        "Customer ID",
+        "Type",
+        "SKU",
+        "Category",
+        "Product Name",
+        "Unit Price",
+        "Qty",
+        "Total",
+        "Discount Code",
+        "Disc %",
+        "Payment",
+        "Source",
+        "City",
+        "State",
+        "Warehouse",
+        "Del Date",
+        "Status",
+        "Return?",
+        "Reason",
+        "Ret Rec",
+        "Refund"
+      ],
+      "missing_values": 556,
+      "column_stats": {
+        "Unit Price": {
+          "column": "Unit Price",
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1776.9918,
+          "min": 299.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Qty": {
+          "column": "Qty",
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5634,
+          "min": -1.0,
+          "max": 5.0,
+          "count": 346
+        },
+        "Total": {
+          "column": "Total",
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1692.1929,
+          "min": 699.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Disc %": {
+          "column": "Disc %",
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.575,
+          "min": 0.0,
+          "max": 40.0,
+          "count": 346
+        }
+      },
+      "multiprocess_stats": {
+        "Unit Price": {
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1774.4221,
+          "variance": 3148573.7078,
+          "min": 299,
+          "max": 8999,
+          "p25": 1599,
+          "p75": 3799,
+          "count": 346
+        },
+        "Qty": {
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5626,
+          "variance": 0.3166,
+          "min": -1,
+          "max": 5,
+          "p25": 1,
+          "p75": 1,
+          "count": 346
+        },
+        "Total": {
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1689.7458,
+          "variance": 2855240.7954,
+          "min": 699,
+          "max": 8999,
+          "p25": 1799,
+          "p75": 3799,
+          "count": 346
+        },
+        "Disc %": {
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.5553,
+          "variance": 183.7474,
+          "min": 0,
+          "max": 40,
+          "p25": 0,
+          "p75": 20,
+          "count": 346
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 2.0275,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_172216_299307.png",
+      "charts/line_20260408_172216_850804.png",
+      "charts/dist_20260408_172217_627838.png"
+    ],
+    "processed_at": "2026-04-08T17:22:18.860232"
+  },
+  {
+    "id": 32,
+    "name": "urbanthreads_q4 + urbanthreads_q4_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 346,
+      "column_count": 23,
+      "columns": [
+        "Order ID",
+        "Order Date",
+        "Customer ID",
+        "Type",
+        "SKU",
+        "Category",
+        "Product Name",
+        "Unit Price",
+        "Qty",
+        "Total",
+        "Discount Code",
+        "Disc %",
+        "Payment",
+        "Source",
+        "City",
+        "State",
+        "Warehouse",
+        "Del Date",
+        "Status",
+        "Return?",
+        "Reason",
+        "Ret Rec",
+        "Refund"
+      ],
+      "missing_values": 556,
+      "column_stats": {
+        "Unit Price": {
+          "column": "Unit Price",
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1776.9918,
+          "min": 299.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Qty": {
+          "column": "Qty",
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5634,
+          "min": -1.0,
+          "max": 5.0,
+          "count": 346
+        },
+        "Total": {
+          "column": "Total",
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1692.1929,
+          "min": 699.0,
+          "max": 8999.0,
+          "count": 346
+        },
+        "Disc %": {
+          "column": "Disc %",
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.575,
+          "min": 0.0,
+          "max": 40.0,
+          "count": 346
+        }
+      },
+      "multiprocess_stats": {
+        "Unit Price": {
+          "mean": 2795.8208,
+          "median": 2299.0,
+          "std": 1774.4221,
+          "variance": 3148573.7078,
+          "min": 299,
+          "max": 8999,
+          "p25": 1599,
+          "p75": 3799,
+          "count": 346
+        },
+        "Qty": {
+          "mean": 1.1821,
+          "median": 1.0,
+          "std": 0.5626,
+          "variance": 0.3166,
+          "min": -1,
+          "max": 5,
+          "p25": 1,
+          "p75": 1,
+          "count": 346
+        },
+        "Total": {
+          "mean": 2958.9277,
+          "median": 2399.0,
+          "std": 1689.7458,
+          "variance": 2855240.7954,
+          "min": 699,
+          "max": 8999,
+          "p25": 1799,
+          "p75": 3799,
+          "count": 346
+        },
+        "Disc %": {
+          "mean": 9.7399,
+          "median": 0.0,
+          "std": 13.5553,
+          "variance": 183.7474,
+          "min": 0,
+          "max": 40,
+          "p25": 0,
+          "p75": 20,
+          "count": 346
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.4305,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_180006_730873.png",
+      "charts/line_20260408_180007_182339.png",
+      "charts/dist_20260408_180008_035483.png"
+    ],
+    "processed_at": "2026-04-08T18:00:09.415947"
+  },
+  {
+    "id": 33,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 37,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.276,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_181403_407786.png",
+      "charts/line_20260408_181403_777092.png",
+      "charts/dist_20260408_181404_505231.png"
+    ],
+    "processed_at": "2026-04-08T18:14:05.704484"
+  },
+  {
+    "id": 34,
+    "name": "datasets + datasets_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 33,
+      "column_count": 6,
+      "columns": [
+        "id",
+        "name",
+        "stats",
+        "charts",
+        "processed_at",
+        "user_id"
+      ],
+      "missing_values": 7,
+      "column_stats": {
+        "id": {
+          "column": "id",
+          "mean": 17.0,
+          "median": 17.0,
+          "std": 9.6695,
+          "min": 1.0,
+          "max": 33.0,
+          "count": 33
+        },
+        "user_id": {
+          "column": "user_id",
+          "mean": 21.5,
+          "median": 21.5,
+          "std": 8.2523,
+          "min": 8.0,
+          "max": 37.0,
+          "count": 26
+        }
+      },
+      "multiprocess_stats": {
+        "id": {
+          "mean": 17.0,
+          "median": 17,
+          "std": 9.5219,
+          "variance": 90.6667,
+          "min": 1,
+          "max": 33,
+          "p25": 9,
+          "p75": 25,
+          "count": 33
+        },
+        "user_id": {
+          "mean": 21.5,
+          "median": 21.5,
+          "std": 8.092,
+          "variance": 65.4808,
+          "min": 8.0,
+          "max": 37.0,
+          "p25": 15.0,
+          "p75": 28.0,
+          "count": 26
+        },
+        "_meta": {
+          "workers_used": 2,
+          "processing_time_seconds": 1.1717,
+          "columns_processed": 2
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_190134_984197.png",
+      "charts/line_20260408_190135_360279.png",
+      "charts/dist_20260408_190136_100398.png"
+    ],
+    "processed_at": "2026-04-08T19:01:36.791048"
+  },
+  {
+    "id": 35,
+    "name": "users + users_mp",
+    "user_id": 2,
+    "stats": {
+      "row_count": 2,
+      "column_count": 6,
+      "columns": [
+        "id",
+        "name",
+        "email",
+        "phone",
+        "status",
+        "submitted_at"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "id": {
+          "column": "id",
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.7071,
+          "min": 1.0,
+          "max": 2.0,
+          "count": 2
+        }
+      },
+      "multiprocess_stats": {
+        "id": {
+          "mean": 1.5,
+          "median": 1.5,
+          "std": 0.5,
+          "variance": 0.25,
+          "min": 1,
+          "max": 2,
+          "p25": 1,
+          "p75": 2,
+          "count": 2
+        },
+        "_meta": {
+          "workers_used": 1,
+          "processing_time_seconds": 1.1835,
+          "columns_processed": 1
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_190224_614376.png",
+      "charts/line_20260408_190225_105287.png",
+      "charts/dist_20260408_190225_737304.png"
+    ],
+    "processed_at": "2026-04-08T19:02:26.146831"
+  },
+  {
+    "id": 36,
+    "name": "app_logs + app_logs_mp",
+    "user_id": 3,
+    "stats": {
+      "row_count": 168,
+      "column_count": 3,
+      "columns": [
+        "function",
+        "timestamp",
+        "status"
+      ],
+      "missing_values": 0,
+      "column_stats": {},
+      "multiprocess_stats": {}
+    },
+    "charts": [],
+    "processed_at": "2026-04-08T20:04:55.919243"
+  },
+  {
+    "id": 37,
+    "name": "app_logs + app_logs_mp",
+    "user_id": null,
+    "stats": {
+      "row_count": 172,
+      "column_count": 3,
+      "columns": [
+        "function",
+        "timestamp",
+        "status"
+      ],
+      "missing_values": 0,
+      "column_stats": {},
+      "multiprocess_stats": {}
+    },
+    "charts": [],
+    "processed_at": "2026-04-08T20:10:11.080810"
+  },
+  {
+    "id": 38,
+    "name": "sample_data + sample_data_mp",
+    "user_id": 4,
+    "stats": {
+      "row_count": 50,
+      "column_count": 4,
+      "columns": [
+        "age",
+        "salary",
+        "score",
+        "experience"
+      ],
+      "missing_values": 0,
+      "column_stats": {
+        "age": {
+          "column": "age",
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.8697,
+          "min": 18.0,
+          "max": 64.0,
+          "count": 50
+        },
+        "salary": {
+          "column": "salary",
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 23186.4877,
+          "min": 20669.0,
+          "max": 98919.0,
+          "count": 50
+        },
+        "score": {
+          "column": "score",
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.3062,
+          "min": 2.25,
+          "max": 97.82,
+          "count": 50
+        },
+        "experience": {
+          "column": "experience",
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.4269,
+          "min": 0.0,
+          "max": 28.0,
+          "count": 50
+        }
+      },
+      "multiprocess_stats": {
+        "age": {
+          "mean": 42.28,
+          "median": 44.0,
+          "std": 13.7303,
+          "variance": 188.5216,
+          "min": 18,
+          "max": 64,
+          "p25": 27,
+          "p75": 55,
+          "count": 50
+        },
+        "salary": {
+          "mean": 59976.56,
+          "median": 61805.5,
+          "std": 22953.4517,
+          "variance": 526860945.6464,
+          "min": 20669,
+          "max": 98919,
+          "p25": 42326,
+          "p75": 79328,
+          "count": 50
+        },
+        "score": {
+          "mean": 51.8586,
+          "median": 58.73,
+          "std": 29.0117,
+          "variance": 841.6778,
+          "min": 2.25,
+          "max": 97.82,
+          "p25": 28.28,
+          "p75": 77.89,
+          "count": 50
+        },
+        "experience": {
+          "mean": 12.54,
+          "median": 12.0,
+          "std": 9.3321,
+          "variance": 87.0884,
+          "min": 0,
+          "max": 28,
+          "p25": 4,
+          "p75": 20,
+          "count": 50
+        },
+        "_meta": {
+          "workers_used": 4,
+          "processing_time_seconds": 1.5539,
+          "columns_processed": 4
+        }
+      }
+    },
+    "charts": [
+      "charts/bar_20260408_201035_659533.png",
+      "charts/line_20260408_201036_149210.png",
+      "charts/dist_20260408_201037_122945.png"
+    ],
+    "processed_at": "2026-04-08T20:10:38.564828"
+  }
+]
